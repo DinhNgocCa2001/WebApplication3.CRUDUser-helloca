@@ -12,6 +12,7 @@ namespace WebApplication.CRUDUser.Utils
             byte[] inputBytes = Encoding.UTF8.GetBytes(input);
             byte[] hashBytes = md5.ComputeHash(inputBytes);
             return Convert.ToHexString(hashBytes);
+            //hello Dinh Ngoc Ca
         }
     }
 }
