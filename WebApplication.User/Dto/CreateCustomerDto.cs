@@ -6,6 +6,7 @@ namespace WebApplication.CRUDUser.Dto
     public class CreateCustomerDto
     {
         private string _FullName;
+        [StringLength(10, ErrorMessage ="Max thi duoc 10 ki tu")]
         public string FullName
         {
             get => _FullName;
